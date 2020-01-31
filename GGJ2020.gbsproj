@@ -27,6 +27,18 @@
             "y": 40,
             "actors": [],
             "triggers": []
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "797491d6-fd3b-466d-869a-55849e87be8d",
+            "x": 309,
+            "y": 226,
+            "actors": [],
+            "triggers": []
         }
     ],
     "_version": "1.2.0",
@@ -42,7 +54,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580453591986
+            "_v": 1580454374254
         }
     ],
     "spriteSheets": [
@@ -52,7 +64,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580453591986
+            "_v": 1580454374254
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -60,7 +72,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580453591986
+            "_v": 1580454374254
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -68,7 +80,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580453591986
+            "_v": 1580454374254
         }
     ],
     "music": [
@@ -76,7 +88,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1580453591984
+            "_v": 1580454374252
         }
     ],
     "customEvents": [],
