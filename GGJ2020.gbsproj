@@ -2,17 +2,17 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 962,
-        "worldScrollY": 64,
+        "worldScrollX": 393,
+        "worldScrollY": 811,
         "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
-        "startX": 29,
-        "startY": 24,
+        "startX": 6,
+        "startY": 8,
         "startDirection": "right",
-        "startSceneId": "e84d1543-4e16-4e68-a668-b96b69d340b9",
+        "startSceneId": "b0005700-3e6e-4a70-a37e-c87109022cea",
         "playerSpriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
         "startAnimSpeed": "4",
         "startMoveSpeed": "0"
@@ -228,11 +228,11 @@
             "y": 325.5,
             "actors": [
                 {
-                    "spriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
+                    "spriteSheetId": "92dc339f-ff30-4b50-9fd7-ac8d43df969a",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "0",
+                    "animSpeed": "2",
                     "id": "fd49480b-86d1-428e-8c73-3064dc413b61",
                     "x": 22,
                     "y": 19,
@@ -255,7 +255,7 @@
                                             "text": [
                                                 "(Orange Owl is\nsitting at the\nseed bar)",
                                                 "(He looks like\nhe's lacking\nsomething in life)",
-                                                "(More than usual\nanyway...)"
+                                                "(More than usual\nanyway...)\n"
                                             ],
                                             "avatarId": ""
                                         }
@@ -285,6 +285,14 @@
                                         "args": {
                                             "variable": "5",
                                             "value": 1
+                                        }
+                                    },
+                                    {
+                                        "id": "53531533-562a-47e3-bfa1-a57612a8785c",
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "fd49480b-86d1-428e-8c73-3064dc413b61",
+                                            "direction": "up"
                                         }
                                     },
                                     {
@@ -324,31 +332,20 @@
                                                     }
                                                 },
                                                 {
+                                                    "id": "f8d6d8b3-cedc-4e1e-a235-1aba689180e5",
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "fd49480b-86d1-428e-8c73-3064dc413b61",
+                                                        "direction": "up"
+                                                    },
+                                                    "__type": "event"
+                                                },
+                                                {
                                                     "id": "a051dd4d-4b20-4601-85dc-9e6dfe687c19",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
-                                                {
-                                                    "id": "885d895f-461b-449f-bf00-4bea582f826b",
-                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
-                                                    "args": {
-                                                        "actorId": "fd49480b-86d1-428e-8c73-3064dc413b61",
-                                                        "direction": "left"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "3a390133-c883-4602-8520-c451653a0037",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Ah yay!",
-                                                            "Radio machine\nfixed :)",
-                                                            "Thanks Peary!"
-                                                        ],
-                                                        "avatarId": ""
-                                                    }
-                                                },
                                                 {
                                                     "id": "d5dadbef-f2f2-4317-b95a-347180061a4c",
                                                     "command": "EVENT_END"
@@ -370,7 +367,44 @@
                     ],
                     "name": "Radio Bird",
                     "animate": false,
-                    "frame": 1
+                    "frame": 3,
+                    "startScript": [
+                        {
+                            "id": "cf4f1c20-8681-4213-acd0-27fe851d53a8",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "5",
+                                "operator": ">",
+                                "comparator": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "126019d5-c697-47f3-961a-1fc73e414987",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "fd49480b-86d1-428e-8c73-3064dc413b61"
+                                        }
+                                    },
+                                    {
+                                        "id": "6455ae95-fe30-41a7-9cfe-bf89e076d9cc",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "227bd46c-d744-43d3-91c7-8b7d3ce84d9e",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "7fa41b35-83db-4f09-aa44-574e83fa1b90",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "421f9ec5-b290-450f-bd32-f76c3c16d18f",
@@ -493,8 +527,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "(You admire the\npainting)",
-                                    "(It's of THE\nCAPTAIN)"
+                                    "(You admire the\npainting)\n",
+                                    "(It's of THE\nCAPTAIN back in\nhis heyday)",
+                                    "(Even back then\nhe wasn't very\nappealing)"
                                 ],
                                 "avatarId": ""
                             }
@@ -504,6 +539,73 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "spriteSheetId": "61904a4f-8040-4f18-a2a5-f0a86e9758a2",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "a3a0eef3-d1c4-429a-87d0-238c467a1745",
+                    "x": 22,
+                    "y": 19,
+                    "animate": true,
+                    "startScript": [
+                        {
+                            "id": "3f799bb4-764f-4f17-8404-a6be5ac41188",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "5",
+                                "operator": "<",
+                                "comparator": 2,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "b3a7cb71-7b16-4963-bf5e-f6de37e9786c",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "b2be2d5c-8790-441c-9f80-7b6a49d06bf6",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "a51221a4-3414-4ec1-a8d0-c7b99f9b8c0a",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2ec1ab68-f8ad-4cd3-8c49-a11992c07d00",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "script": [
+                        {
+                            "id": "8a5c74cf-83af-4128-93c3-309a5a6e63d5",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Ah yay!",
+                                    "Radio machine\nfixed :)",
+                                    "Thanks Peary!"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "95fc0609-83d3-4683-957c-fad4600c651d",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Owl happy"
                 }
             ],
             "triggers": [
@@ -1275,7 +1377,7 @@
         },
         {
             "name": "Deck Zone",
-            "backgroundId": "06168db2-2d77-4fdb-894a-aefccc571ff5",
+            "backgroundId": "fb7f779f-6cae-4aad-92dd-bf14d3528acd",
             "width": 32,
             "height": 32,
             "collisions": [
@@ -1413,7 +1515,7 @@
             "y": 331.5,
             "actors": [
                 {
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "4c267984-884b-48ff-85ed-65349d66595a",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -1427,7 +1529,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "(You found the\nCaptain's sexy\nshades!)"
+                                    "(You found the\nCaptain's sexy\nfedora!)",
+                                    "(You feel more\ncharming just by\nholding it...)"
                                 ],
                                 "avatarId": ""
                             }
@@ -1529,14 +1632,15 @@
                         }
                     ],
                     "name": "Shades",
-                    "__type": "actor"
+                    "__type": "actor",
+                    "animate": true
                 },
                 {
-                    "spriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
+                    "spriteSheetId": "24412e44-9149-4e6b-813f-397124b6dd71",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "3",
+                    "animSpeed": "2",
                     "id": "5982a2e2-2f06-4c41-938b-3d13ba02966d",
                     "x": 1,
                     "y": 20,
@@ -1578,14 +1682,15 @@
                             "id": "0fdf1456-ae63-46d3-957e-944163612b70",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "animate": true
                 },
                 {
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "97d3ffbb-33c9-4d29-b113-d87ad064974f",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
-                    "animSpeed": "3",
+                    "animSpeed": "2",
                     "id": "3d936886-5a00-491b-a643-f1e299be07dd",
                     "x": 1,
                     "y": 20,
@@ -1626,7 +1731,8 @@
                             "id": "65efe093-5c58-4118-b347-3e0413d0902b",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "animate": true
                 }
             ],
             "triggers": [
@@ -1673,7 +1779,7 @@
         },
         {
             "name": "Steering Zone",
-            "backgroundId": "01681509-6409-4ce4-aca4-ee6547f48fe9",
+            "backgroundId": "9b6b45ac-7664-40df-a6bd-4c70b1750c87",
             "width": 32,
             "height": 32,
             "collisions": [
@@ -1731,31 +1837,31 @@
                 0,
                 240,
                 255,
-                3,
+                1,
                 0,
                 16,
                 0,
-                7,
+                1,
                 0,
                 112,
                 254,
-                3,
+                1,
                 0,
                 64,
                 226,
-                3,
+                7,
                 0,
                 64,
                 34,
-                2,
+                4,
                 0,
                 64,
-                98,
-                2,
+                226,
+                4,
                 0,
-                120,
-                126,
-                254,
+                248,
+                255,
+                252,
                 7,
                 8,
                 0,
@@ -1811,13 +1917,13 @@
             "y": 30,
             "actors": [
                 {
-                    "spriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
-                    "movementType": "static",
-                    "direction": "down",
+                    "spriteSheetId": "24412e44-9149-4e6b-813f-397124b6dd71",
+                    "movementType": "randomFace",
+                    "direction": "right",
                     "moveSpeed": "0",
-                    "animSpeed": "0",
+                    "animSpeed": "2",
                     "id": "ce46356f-6198-4964-be4b-4accf7f0346e",
-                    "x": 22,
+                    "x": 21,
                     "y": 20,
                     "name": "Captain No Clothes",
                     "script": [
@@ -1847,7 +1953,27 @@
                                         "args": {
                                             "text": [
                                                 "Wow thanks Peary!",
-                                                "I'm putting them\non straight away\n:)"
+                                                "I'm putting them\non straight away!",
+                                                "...",
+                                                "Um could you turn\naround please?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "14314fa0-c625-4171-9ce7-ae950de685b5",
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "player",
+                                            "direction": "left"
+                                        }
+                                    },
+                                    {
+                                        "id": "1a3e349a-e846-4c44-ac39-a25146208d41",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The nerve of some\npeople..."
                                             ],
                                             "avatarId": ""
                                         }
@@ -1912,7 +2038,7 @@
                                                     "args": {
                                                         "text": [
                                                             "Look I hate to be\nso demanding\nbut...",
-                                                            "You still need to\nfind one more item\nof clothing."
+                                                            "Just kidding I\ndon't actually\nhate it lol haha"
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -1930,7 +2056,8 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Just kidding I\ndon't actually\nhate it lol haha"
+                                                            "But yeah.\n\n",
+                                                            "You still need to\nfind one more item\nof clothing."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -1966,7 +2093,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "FUCK",
+                                                                        "FUCK\n\n",
                                                                         "That's no where\nnear enough\nclothes Peary!"
                                                                     ],
                                                                     "avatarId": ""
@@ -1985,7 +2112,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Keep looking\nplease."
+                                                                        "Keep looking\nplease.\n"
                                                                     ],
                                                                     "avatarId": ""
                                                                 }
@@ -2022,8 +2149,8 @@
                                                                             "args": {
                                                                                 "text": [
                                                                                     "Peary why am I\nlooking at you\nagain?",
-                                                                                    "Do you have my\nclothes yet?",
-                                                                                    "No?"
+                                                                                    "Do you have my\nclothes yet?\n",
+                                                                                    "No?\n\n"
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             }
@@ -2041,7 +2168,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Then frick off."
+                                                                                    "Then frick off.\n\n"
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             }
@@ -2053,23 +2180,25 @@
                                                                     ],
                                                                     "false": [
                                                                         {
+                                                                            "id": "fbedf36f-c266-4286-b537-21b66aac0371",
+                                                                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "direction": "right",
+                                                                                "__collapse": false
+                                                                            },
+                                                                            "__type": "event"
+                                                                        },
+                                                                        {
                                                                             "id": "06ec4632-e084-4cb3-ab7f-7ccfbad46acd",
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
                                                                                     "(THE CAPTAIN\nstands proud at\nthe ship's wheel)",
                                                                                     "(His sweat\nglistening in the\nscorching sun)",
-                                                                                    "(Also he is\nnaked...)"
+                                                                                    "(Also he is\nnaked...)\n"
                                                                                 ],
                                                                                 "avatarId": ""
-                                                                            }
-                                                                        },
-                                                                        {
-                                                                            "id": "ef8e5c9e-2b10-49ec-b86a-a3b60ff68f77",
-                                                                            "command": "EVENT_ACTOR_SET_FRAME",
-                                                                            "args": {
-                                                                                "actorId": "$self$",
-                                                                                "frame": 4
                                                                             }
                                                                         },
                                                                         {
@@ -2087,11 +2216,11 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Hey Peary,",
+                                                                                    "Hey Peary,\n\n",
                                                                                     "I was getting heat\nstroke so I took\nmy clothes off.",
-                                                                                    "But now I'm cold\n:(",
-                                                                                    "Could you help me\nrepair my dignity,",
-                                                                                    "and go find them\nfor me?"
+                                                                                    "But now I'm\ncold...\n",
+                                                                                    "Could you help me\nrepair my dignity,\n",
+                                                                                    "and go find them\nfor me?\n"
                                                                                 ],
                                                                                 "avatarId": ""
                                                                             }
@@ -2124,9 +2253,16 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "(You say yes and\nleave immediately)"
+                                                                                    "(You say yes and\nleave immediately)\n"
                                                                                 ],
                                                                                 "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "339374f5-7ba7-4de3-952e-b78fce4f6c70",
+                                                                            "command": "EVENT_ACTOR_SHOW",
+                                                                            "args": {
+                                                                                "actorId": "8dea872c-aa50-4357-84a8-7f0634d7d601"
                                                                             }
                                                                         },
                                                                         {
@@ -2162,7 +2298,7 @@
                             "command": "EVENT_END"
                         }
                     ],
-                    "animate": false,
+                    "animate": true,
                     "frame": 4,
                     "startScript": [
                         {
@@ -2203,13 +2339,13 @@
                     ]
                 },
                 {
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "97d3ffbb-33c9-4d29-b113-d87ad064974f",
                     "movementType": "faceInteraction",
                     "direction": "right",
                     "moveSpeed": "1",
-                    "animSpeed": "3",
+                    "animSpeed": "2",
                     "id": "fb7dae53-161d-46b6-8ea9-2da33c2327c6",
-                    "x": 22,
+                    "x": 21,
                     "y": 20,
                     "name": "Captain with clothes",
                     "startScript": [
@@ -2255,7 +2391,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "God I fricken love\nclothes dude"
+                                    "God I fricken love\nclothes dude."
                                 ],
                                 "avatarId": ""
                             }
@@ -2272,16 +2408,17 @@
                             "id": "6d312472-a916-488a-aa97-3bbf7462ad53",
                             "command": "EVENT_END"
                         }
-                    ]
+                    ],
+                    "animate": true
                 },
                 {
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "f1998dff-9ad2-45b3-9ea7-7c821cbd31f6",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "8dea872c-aa50-4357-84a8-7f0634d7d601",
-                    "x": 4,
+                    "x": 5,
                     "y": 20,
                     "script": [
                         {
@@ -2389,7 +2526,8 @@
                             "command": "EVENT_END"
                         }
                     ],
-                    "name": "Boots"
+                    "name": "Boots",
+                    "animate": true
                 }
             ],
             "triggers": [
@@ -2560,7 +2698,7 @@
             "y": 625,
             "actors": [
                 {
-                    "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+                    "spriteSheetId": "5d137376-f283-421e-a38c-d8b8011fa80d",
                     "movementType": "static",
                     "direction": "down",
                     "moveSpeed": "1",
@@ -2676,12 +2814,14 @@
                         }
                     ],
                     "name": "Coat",
-                    "__type": "actor"
+                    "__type": "actor",
+                    "frame": null,
+                    "animate": true
                 },
                 {
-                    "spriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
+                    "spriteSheetId": "054ac35a-b154-4cc2-8a91-bdae2cc0d05b",
                     "movementType": "faceInteraction",
-                    "direction": "right",
+                    "direction": "left",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "17db039b-d7ff-43a5-9bec-40dc26404a08",
@@ -2709,41 +2849,61 @@
                                                 "(Almost Like she's\ntrying to hide\nsomething...)"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
-                                        "id": "47a9f2a9-8258-433e-b4a6-1a8342cd1ff9",
-                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "id": "7b5390cc-fd87-46c3-b2ab-5333c57717a5",
+                                        "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
                                         "args": {
-                                            "actorId": "17db039b-d7ff-43a5-9bec-40dc26404a08",
-                                            "direction": "left",
-                                            "__collapse": true
-                                        }
+                                            "actorId": "$self$",
+                                            "speed": "4"
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "a4133c00-7b02-484f-ba2d-9b6fb32f7abd",
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Wow!!!",
-                                                "Ahh!!!",
-                                                "Yikes!!!",
+                                                "Wow!!!\n\n",
+                                                "Ahh!!!\n\n",
+                                                "Yikes!!!\n\n",
                                                 "Did you see\nthere's a hole in\nthe hull???",
                                                 "I wonder who would\nbe so foolish to\naccidentally uh",
-                                                "Put a huge hole in\nthe ship like\nthat???",
-                                                "Not me that's for\nsure ahahahaha",
-                                                "Can you fix it\nPeary???",
-                                                "Water is already\nleaking in and I\ndon't want my",
-                                                "socks to get\nwet!!!",
-                                                "Eww wet socks,\nnobody likes wet\nsocks.",
-                                                "Do you like wet\nsocks Peary?",
-                                                "I wouldn't be your\nfriend if you\ndidn't.",
-                                                "Prove to me you\nhate wet socks by\nrepairing the hole"
+                                                "Put a huge hole in\nthe hull like\nthat???",
+                                                "Not me that's for\nsure ahahahaha\n"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
+                                    },
+                                    {
+                                        "id": "114ab289-a9a9-4699-9af0-365150dde6d7",
+                                        "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "speed": "2"
+                                        },
+                                        "__type": "event"
+                                    },
+                                    {
+                                        "id": "e5767c00-93e2-4865-ab6c-2f08861c0cb2",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Can you repair it\nPeary???\n",
+                                                "Water is already\nleaking in and I\ndon't want my",
+                                                "socks to get\nwet!!!\n",
+                                                "Eww wet socks,\nnobody likes wet\nsocks.",
+                                                "Do you like wet\nsocks Peary?\n",
+                                                "I wouldn't be your\nfriend if you\ndid.",
+                                                "Prove to me you\nhate wet socks by\nfixing the hole!"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        },
+                                        "__type": "event"
                                     },
                                     {
                                         "id": "55685789-0327-4a87-a67a-4c75922c512e",
@@ -2759,6 +2919,14 @@
                                         "args": {
                                             "variable": "6",
                                             "value": 1
+                                        }
+                                    },
+                                    {
+                                        "id": "e7920765-24f3-4000-96ff-4c43777d0415",
+                                        "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "speed": "3"
                                         }
                                     },
                                     {
@@ -2783,10 +2951,10 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Umm...",
+                                                            "Umm...\n\n",
                                                             "I don't mean to\nrush you Peary\nbut...",
-                                                            "THERE'S STILL A\nHOLE IN THE SHIP",
-                                                            "Think about my\nsocks!!! >:("
+                                                            "THERE'S STILL A\nHOLE IN THE SHIP\n",
+                                                            "Think about my\nsocks!!! >:(\n"
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -2813,9 +2981,9 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Phew...",
+                                                                        "Phew...\n\n",
                                                                         "Well I guess we\ncan be still be\nfriends then.",
-                                                                        "...",
+                                                                        "...\n\n",
                                                                         "Thanks for\nfixing the hole\nPeary."
                                                                     ],
                                                                     "avatarId": ""
@@ -2840,9 +3008,9 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "...",
-                                                                        "...",
-                                                                        "...",
+                                                                        "...\n\n",
+                                                                        "...\n\n",
+                                                                        "...\n\n",
                                                                         "Please don't tell\nTHE CAPTAIN about\nthis Peary..."
                                                                     ],
                                                                     "avatarId": ""
@@ -2875,7 +3043,45 @@
                         }
                     ],
                     "name": "Sparrow",
-                    "animate": true
+                    "animate": true,
+                    "startScript": [
+                        {
+                            "id": "a0886074-7a52-45c3-8d9d-19ce5a941964",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "operator": ">=",
+                                "comparator": 2,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "e92c8b8f-077e-424b-b956-60b5772bd32c",
+                                        "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "speed": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "b54dd1a0-4af9-4988-a35e-a98b9acc331f",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "b9e97cf7-47b8-4b8c-a8ff-f7964e473894",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cb5390a5-5a61-4743-8966-130c946e39f2",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "spriteSheetId": "421f9ec5-b290-450f-bd32-f76c3c16d18f",
@@ -3982,25 +4188,170 @@
             ]
         },
         {
-            "name": "Intro",
-            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
-            "width": 20,
-            "height": 18,
-            "collisions": [],
+            "name": "Start Menu",
+            "backgroundId": "fb7f779f-6cae-4aad-92dd-bf14d3528acd",
+            "width": 32,
+            "height": 32,
+            "collisions": [
+                192,
+                63,
+                0,
+                0,
+                64,
+                32,
+                0,
+                0,
+                192,
+                57,
+                0,
+                0,
+                0,
+                249,
+                31,
+                0,
+                0,
+                25,
+                16,
+                0,
+                0,
+                121,
+                30,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                250,
+                31,
+                0,
+                73,
+                10,
+                24,
+                0,
+                73,
+                122,
+                30,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                126,
+                254,
+                0,
+                73,
+                14,
+                128,
+                252,
+                121,
+                206,
+                255,
+                4,
+                0,
+                64,
+                0,
+                252,
+                255,
+                127,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
             "id": "3a0c2ced-6386-41d3-8fec-811dcd6fef94",
-            "x": 686.5,
-            "y": 30.5,
+            "x": 899.5,
+            "y": 30,
             "actors": [],
             "triggers": [],
             "script": [
+                {
+                    "id": "1e12cb92-b825-4265-815a-c553cba2b250",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 1.5
+                    }
+                },
+                {
+                    "id": "1dd699e3-dd25-4ee2-a281-8dcb4eba7a61",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": "3",
+                        "speedOut": "3",
+                        "speed": 1
+                    }
+                },
                 {
                     "id": "8d3bc959-053f-480a-92d5-0419cd4fa41b",
                     "command": "EVENT_MENU",
                     "args": {
                         "variable": "L1",
                         "items": 2,
-                        "option1": "Start",
-                        "option2": "",
+                        "option1": "Get Up",
+                        "option2": "Do Not",
                         "option3": "",
                         "option4": "",
                         "option5": "",
@@ -4012,7 +4363,314 @@
                     }
                 },
                 {
+                    "id": "7d38fa5a-a397-4f4f-8890-fed91917ad61",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": "1",
+                        "speedOut": 1,
+                        "speed": 1
+                    },
+                    "__type": "event"
+                },
+                {
+                    "id": "fb8b169c-0ecf-4712-8426-7bcdd7c1ef3b",
+                    "command": "EVENT_IF_VALUE",
+                    "args": {
+                        "variable": "L1",
+                        "operator": "==",
+                        "comparator": 1,
+                        "__collapseElse": false,
+                        "__collapse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "29bc4a63-0126-4db6-909c-3ca803e2dbff",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "e84d1543-4e16-4e68-a668-b96b69d340b9",
+                                    "x": 29,
+                                    "y": 24,
+                                    "direction": "right",
+                                    "fadeSpeed": "5"
+                                }
+                            },
+                            {
+                                "id": "d962e774-4bb1-41b1-83bc-337e33e300cd",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "1af9aced-8b72-4fdc-ab87-9b4cded1731a",
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "2363cf3d-5d49-4d91-871c-53bb2ad7ad47",
+                                    "x": 0,
+                                    "y": 0,
+                                    "direction": "",
+                                    "fadeSpeed": "5"
+                                }
+                            },
+                            {
+                                "id": "86fc60fb-fdcd-400a-b3e5-4e6bffab0759",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
                     "id": "b1295f73-0424-45a7-81a0-603a2083de63",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Climax Zone",
+            "backgroundId": "06168db2-2d77-4fdb-894a-aefccc571ff5",
+            "width": 32,
+            "height": 32,
+            "collisions": [
+                192,
+                63,
+                0,
+                0,
+                64,
+                32,
+                0,
+                0,
+                192,
+                57,
+                0,
+                0,
+                0,
+                249,
+                31,
+                0,
+                0,
+                25,
+                16,
+                0,
+                0,
+                121,
+                30,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                2,
+                0,
+                0,
+                73,
+                250,
+                31,
+                0,
+                73,
+                10,
+                24,
+                0,
+                73,
+                122,
+                30,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                66,
+                2,
+                0,
+                73,
+                126,
+                254,
+                0,
+                73,
+                14,
+                128,
+                252,
+                121,
+                206,
+                255,
+                4,
+                0,
+                64,
+                0,
+                252,
+                255,
+                127,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "d7ff9be1-8a20-4ccc-a0bf-0915cb0adcbb",
+            "x": 968,
+            "y": 333,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Intro",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "b0005700-3e6e-4a70-a37e-c87109022cea",
+            "x": 693,
+            "y": 30,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "4cfd37a9-2e0b-460f-ad9c-87af8a008fe4",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player",
+                        "__collapse": true
+                    }
+                },
+                {
+                    "id": "76f0ebeb-4c4d-464a-8d43-16a30c521cf2",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": "1",
+                        "speedOut": "1",
+                        "speed": "2"
+                    }
+                },
+                {
+                    "id": "f6a15f16-160f-4c89-8909-21292dce7453",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5
+                    }
+                },
+                {
+                    "id": "12387e30-7e6e-47a0-bda2-3a865f489917",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "3a0c2ced-6386-41d3-8fec-811dcd6fef94",
+                        "x": 29,
+                        "y": 24,
+                        "direction": "",
+                        "fadeSpeed": "5"
+                    }
+                },
+                {
+                    "id": "05efc575-ae42-4a6d-b603-6386911d16b6",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Game Over",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "2363cf3d-5d49-4d91-871c-53bb2ad7ad47",
+            "x": 1185.5,
+            "y": 32,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "89a372f6-78cf-4657-8caa-64088fef9c6a",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "player"
+                    }
+                },
+                {
+                    "id": "50c75024-0fe4-43d0-8886-f890e1feac9c",
+                    "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+                    "args": {
+                        "speedIn": 1,
+                        "speedOut": "3",
+                        "speed": 1
+                    }
+                },
+                {
+                    "id": "5adb609d-99cc-4818-8057-b5120fefc5ce",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "GAME OVER",
+                            "YOU FUCK"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "be47a8d6-a55f-43fd-819a-3bd279c07a1c",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "b0005700-3e6e-4a70-a37e-c87109022cea",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "3"
+                    }
+                },
+                {
+                    "id": "a28065a9-447b-4d51-9bdf-0ac29701f93e",
                     "command": "EVENT_END"
                 }
             ]
@@ -4053,6 +4711,16 @@
     ],
     "backgrounds": [
         {
+            "id": "242be6b6-a5b3-4f73-861c-dce0838fde18",
+            "name": "Hull",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Hull.png",
+            "_v": 1580543738626
+        },
+        {
             "id": "f6285e4a-66eb-4da6-ba22-10794e11c879",
             "name": "Hull 2",
             "width": 32,
@@ -4060,7 +4728,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 2.png",
-            "_v": 1580531731585
+            "_v": 1580543738626
         },
         {
             "id": "3605a0bf-6c37-4863-9773-521647404ab3",
@@ -4070,67 +4738,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 3.png",
-            "_v": 1580531731585
-        },
-        {
-            "id": "242be6b6-a5b3-4f73-861c-dce0838fde18",
-            "name": "Hull",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Hull.png",
-            "_v": 1580531731585
-        },
-        {
-            "id": "a5910d85-f09c-4017-ae01-a900f6052b78",
-            "name": "Radio room 2",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Radio room 2.png",
-            "_v": 1580531731585
-        },
-        {
-            "id": "5acd1a4e-dc40-4206-88fa-fe3a8a3ae643",
-            "name": "Radio room",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Radio room.png",
-            "_v": 1580531731585
-        },
-        {
-            "id": "06168db2-2d77-4fdb-894a-aefccc571ff5",
-            "name": "Ship 2",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Ship 2.png",
-            "_v": 1580537289206
-        },
-        {
-            "id": "b107354e-b1cf-478b-8bc8-ac00663800ce",
-            "name": "Ship",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Ship.png",
-            "_v": 1580533189565
-        },
-        {
-            "id": "01681509-6409-4ce4-aca4-ee6547f48fe9",
-            "name": "Steering zone",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Steering zone.png",
-            "_v": 1580531731585
+            "_v": 1580543738626
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -4140,33 +4748,87 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580531731585
+            "_v": 1580543738625
+        },
+        {
+            "id": "5acd1a4e-dc40-4206-88fa-fe3a8a3ae643",
+            "name": "Radio room",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Radio room.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "a5910d85-f09c-4017-ae01-a900f6052b78",
+            "name": "Radio room 2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Radio room 2.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "b107354e-b1cf-478b-8bc8-ac00663800ce",
+            "name": "Ship",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Ship.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "06168db2-2d77-4fdb-894a-aefccc571ff5",
+            "name": "Ship 2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Ship 2.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "fb7f779f-6cae-4aad-92dd-bf14d3528acd",
+            "name": "Ship 3",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Ship 3.png",
+            "_v": 1580543804735
+        },
+        {
+            "id": "01681509-6409-4ce4-aca4-ee6547f48fe9",
+            "name": "Steering zone",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Steering zone.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "9b6b45ac-7664-40df-a6bd-4c70b1750c87",
+            "name": "Steering zone 2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Steering zone 2.png",
+            "_v": 1580543738626
         }
     ],
     "spriteSheets": [
-        {
-            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-            "name": "actor",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "actor.png",
-            "_v": 1580531731585
-        },
-        {
-            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-            "name": "actor_animated",
-            "numFrames": 6,
-            "type": "actor_animated",
-            "filename": "actor_animated.png",
-            "_v": 1580531731585
-        },
         {
             "id": "12cb4204-0644-47cc-89d6-d06dd1a94e9a",
             "name": "B Button",
             "numFrames": 2,
             "type": "animated",
             "filename": "B Button.png",
-            "_v": 1580531731586
+            "_v": 1580543738626
         },
         {
             "id": "421f9ec5-b290-450f-bd32-f76c3c16d18f",
@@ -4174,7 +4836,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Blank.png",
-            "_v": 1580531731585
+            "_v": 1580543738626
         },
         {
             "id": "c21c7eed-e53a-4330-81fb-9c39e8d80843",
@@ -4182,7 +4844,23 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Button.png",
-            "_v": 1580531731586
+            "_v": 1580543738626
+        },
+        {
+            "id": "97d3ffbb-33c9-4d29-b113-d87ad064974f",
+            "name": "Captain_clothed",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Captain_clothed.png",
+            "_v": 1580546505503
+        },
+        {
+            "id": "24412e44-9149-4e6b-813f-397124b6dd71",
+            "name": "Captain_natural",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Captain_natural.png",
+            "_v": 1580546505500
         },
         {
             "id": "917e1462-b0bd-4196-a479-99224b6b4d16",
@@ -4190,15 +4868,63 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "D-Pad Button.png",
-            "_v": 1580531731586
+            "_v": 1580543738626
         },
         {
-            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
-            "name": "static",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "static.png",
-            "_v": 1580531731585
+            "id": "f1998dff-9ad2-45b3-9ea7-7c821cbd31f6",
+            "name": "Dapper boots",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Dapper boots.png",
+            "_v": 1580547803311
+        },
+        {
+            "id": "5d137376-f283-421e-a38c-d8b8011fa80d",
+            "name": "Fucking cool coat",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Fucking cool coat.png",
+            "_v": 1580547962458
+        },
+        {
+            "id": "2878ebbe-a0be-4a12-8790-fd4d13fae4cd",
+            "name": "Orange owl",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Orange owl.png",
+            "_v": 1580544658914
+        },
+        {
+            "id": "92dc339f-ff30-4b50-9fd7-ac8d43df969a",
+            "name": "Orange owl_BigSAD",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Orange owl_BigSAD.png",
+            "_v": 1580545586818
+        },
+        {
+            "id": "61904a4f-8040-4f18-a2a5-f0a86e9758a2",
+            "name": "Orange owl_happy",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Orange owl_happy.png",
+            "_v": 1580545586816
+        },
+        {
+            "id": "4c267984-884b-48ff-85ed-65349d66595a",
+            "name": "Sexy fedora",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Sexy fedora.png",
+            "_v": 1580547803314
+        },
+        {
+            "id": "054ac35a-b154-4cc2-8a91-bdae2cc0d05b",
+            "name": "Strawberry sparrow",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Strawberry sparrow.png",
+            "_v": 1580545401036
         },
         {
             "id": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
@@ -4206,21 +4932,51 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "The boi.png",
-            "_v": 1580538019034
+            "_v": 1580543738626
+        },
+        {
+            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "name": "actor",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "actor.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+            "name": "actor_animated",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "actor_animated.png",
+            "_v": 1580543738626
+        },
+        {
+            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+            "name": "static",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "static.png",
+            "_v": 1580543738626
         }
     ],
     "music": [
         {
+            "id": "da1125c3-2c68-4282-bbfc-505a46eeec00",
+            "name": "calculator",
+            "filename": "calculator.mod",
+            "_v": 1580543738623
+        },
+        {
             "id": "c7f6ce06-f65b-4adf-8b00-a485799d4770",
             "name": "music1",
             "filename": "music1.mod",
-            "_v": 1580533829727
+            "_v": 1580543738623
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1580531731584
+            "_v": 1580543738623
         }
     ],
     "customEvents": [
