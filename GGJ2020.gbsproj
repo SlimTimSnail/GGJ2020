@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 218,
-        "worldScrollY": 321,
-        "zoom": 200,
+        "worldScrollX": 238,
+        "worldScrollY": 358,
+        "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -1416,6 +1416,20 @@
                         }
                     ]
                 }
+            ],
+            "script": [
+                {
+                    "id": "21300c37-0da2-449a-acdf-abe4190d4ed6",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "d71a522d-2824-4c70-ace6-a2a1488fea1b",
+                        "loop": true
+                    }
+                },
+                {
+                    "id": "34f1e2ad-a98a-4fdf-973b-bdd237c98762",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
@@ -2440,6 +2454,16 @@
     ],
     "backgrounds": [
         {
+            "id": "242be6b6-a5b3-4f73-861c-dce0838fde18",
+            "name": "Hull",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Hull.png",
+            "_v": 1580527061122
+        },
+        {
             "id": "f6285e4a-66eb-4da6-ba22-10794e11c879",
             "name": "Hull 2",
             "width": 32,
@@ -2447,7 +2471,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 2.png",
-            "_v": 1580523594469
+            "_v": 1580527061122
         },
         {
             "id": "3605a0bf-6c37-4863-9773-521647404ab3",
@@ -2457,47 +2481,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 3.png",
-            "_v": 1580526544656
-        },
-        {
-            "id": "242be6b6-a5b3-4f73-861c-dce0838fde18",
-            "name": "Hull",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Hull.png",
-            "_v": 1580520535205
-        },
-        {
-            "id": "5acd1a4e-dc40-4206-88fa-fe3a8a3ae643",
-            "name": "Radio room",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Radio room.png",
-            "_v": 1580520527603
-        },
-        {
-            "id": "b107354e-b1cf-478b-8bc8-ac00663800ce",
-            "name": "Ship",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Ship.png",
-            "_v": 1580520527602
-        },
-        {
-            "id": "01681509-6409-4ce4-aca4-ee6547f48fe9",
-            "name": "Steering zone",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Steering zone.png",
-            "_v": 1580520527602
+            "_v": 1580527061122
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -2507,7 +2491,37 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580520527602
+            "_v": 1580527061122
+        },
+        {
+            "id": "5acd1a4e-dc40-4206-88fa-fe3a8a3ae643",
+            "name": "Radio room",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Radio room.png",
+            "_v": 1580527061122
+        },
+        {
+            "id": "b107354e-b1cf-478b-8bc8-ac00663800ce",
+            "name": "Ship",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Ship.png",
+            "_v": 1580527061122
+        },
+        {
+            "id": "01681509-6409-4ce4-aca4-ee6547f48fe9",
+            "name": "Steering zone",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Steering zone.png",
+            "_v": 1580527061122
         }
     ],
     "spriteSheets": [
@@ -2517,7 +2531,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580520527602
+            "_v": 1580527061123
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -2525,7 +2539,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         },
         {
             "id": "12cb4204-0644-47cc-89d6-d06dd1a94e9a",
@@ -2533,7 +2547,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "B Button.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         },
         {
             "id": "c21c7eed-e53a-4330-81fb-9c39e8d80843",
@@ -2541,7 +2555,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Button.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         },
         {
             "id": "917e1462-b0bd-4196-a479-99224b6b4d16",
@@ -2549,7 +2563,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "D-Pad Button.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -2557,7 +2571,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         },
         {
             "id": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
@@ -2565,15 +2579,69 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "The boi.png",
-            "_v": 1580520527603
+            "_v": 1580527061123
         }
     ],
     "music": [
         {
+            "id": "d71a522d-2824-4c70-ace6-a2a1488fea1b",
+            "name": "music1",
+            "filename": "music1.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "c3fdd97c-03ef-43a9-9136-66e67208b0b9",
+            "name": "music1.AutoSave.20200201.144838.mod",
+            "filename": "music1.mod.AutoSave.20200201.144838.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "720d2fe4-33f6-49e0-96e6-1b80f097388c",
+            "name": "music1.AutoSave.20200201.154844.mod",
+            "filename": "music1.mod.AutoSave.20200201.154844.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "5ca97d29-9d8c-4e53-b487-79103066f151",
+            "name": "music1.AutoSave.20200201.160845.mod",
+            "filename": "music1.mod.AutoSave.20200201.160845.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "bc44a072-d95f-490e-ba4d-8661cacd920f",
+            "name": "prospect",
+            "filename": "prospect.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "1d2eec58-5f06-4d1b-adc1-8b82218e45f5",
+            "name": "prospect-chords",
+            "filename": "prospect-chords.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "77f2f444-740d-4c1e-88cc-45da82054fc7",
+            "name": "prospect-chords.AutoSave.20200201.160522.mod",
+            "filename": "prospect-chords.mod.AutoSave.20200201.160522.mod",
+            "_v": 1580527061121
+        },
+        {
+            "id": "14adf706-7b0a-40fc-b587-9747b17c9b1f",
+            "name": "prospect.AutoSave.20200201.122800.mod",
+            "filename": "prospect.mod.AutoSave.20200201.122800.mod",
+            "_v": 1580527061121
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1580520527601
+            "_v": 1580527061121
+        },
+        {
+            "id": "d044312a-c921-47e1-9688-fad7295867bb",
+            "name": "template.AutoSave.20200201.154522.mod",
+            "filename": "template.mod.AutoSave.20200201.154522.mod",
+            "_v": 1580527061121
         }
     ],
     "customEvents": [
