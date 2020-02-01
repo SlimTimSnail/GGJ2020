@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 660,
-        "worldScrollY": 637,
+        "worldScrollX": 962,
+        "worldScrollY": 64,
         "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -14,8 +14,8 @@
         "startDirection": "right",
         "startSceneId": "e84d1543-4e16-4e68-a668-b96b69d340b9",
         "playerSpriteSheetId": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
-        "startAnimSpeed": "3",
-        "startMoveSpeed": "1"
+        "startAnimSpeed": "4",
+        "startMoveSpeed": "0"
     },
     "scenes": [
         {
@@ -453,7 +453,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "(The radio is\nplaying Numbers by\nKraftwerk)"
+                                                            "(The radio is\nplaying Kraftwerk)"
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -2816,9 +2816,17 @@
                                                                         "Phew...",
                                                                         "Well I guess we\ncan be still be\nfriends then.",
                                                                         "...",
-                                                                        "Thanks for\nfixing the hole\nPeary..."
+                                                                        "Thanks for\nfixing the hole\nPeary."
                                                                     ],
                                                                     "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "6a0f6d32-6fea-4320-a6e0-79dbc1cbbf65",
+                                                                "command": "EVENT_SET_VALUE",
+                                                                "args": {
+                                                                    "variable": "6",
+                                                                    "value": 3
                                                                 }
                                                             },
                                                             {
@@ -2827,6 +2835,19 @@
                                                             }
                                                         ],
                                                         "false": [
+                                                            {
+                                                                "id": "8e2991f7-1a67-47d5-87fc-1d2f7e876eb4",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "...",
+                                                                        "...",
+                                                                        "...",
+                                                                        "Please don't tell\nTHE CAPTAIN about\nthis Peary..."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
                                                             {
                                                                 "id": "66ba4469-d88d-44df-a2ad-0c872be96254",
                                                                 "command": "EVENT_END"
@@ -3956,6 +3977,42 @@
                 },
                 {
                     "id": "e901337f-9181-460f-b0e1-134a0918fb98",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Intro",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "3a0c2ced-6386-41d3-8fec-811dcd6fef94",
+            "x": 686.5,
+            "y": 30.5,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "id": "8d3bc959-053f-480a-92d5-0419cd4fa41b",
+                    "command": "EVENT_MENU",
+                    "args": {
+                        "variable": "L1",
+                        "items": 2,
+                        "option1": "Start",
+                        "option2": "",
+                        "option3": "",
+                        "option4": "",
+                        "option5": "",
+                        "option6": "",
+                        "option7": "",
+                        "option8": "",
+                        "cancelOnB": false,
+                        "layout": "dialogue"
+                    }
+                },
+                {
+                    "id": "b1295f73-0424-45a7-81a0-603a2083de63",
                     "command": "EVENT_END"
                 }
             ]
