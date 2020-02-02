@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 635,
-        "worldScrollY": 2,
-        "zoom": 100,
+        "worldScrollX": 804,
+        "worldScrollY": 1008,
+        "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -206,7 +206,7 @@
                                                 "Ah frick...",
                                                 "Radio machine\nbroke :("
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa"
                                         }
                                     },
                                     {
@@ -258,7 +258,7 @@
                                                             "Ah frick...",
                                                             "Radio machine\nbroke :("
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa"
                                                     }
                                                 },
                                                 {
@@ -527,7 +527,7 @@
                                     "Radio machine\nfixed :)",
                                     "Thanks Peary!"
                                 ],
-                                "avatarId": ""
+                                "avatarId": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa"
                             }
                         },
                         {
@@ -2567,7 +2567,7 @@
                                                             "Umm...\n\n",
                                                             "I don't mean to\nrush you Peary\nbut...",
                                                             "THERE'S STILL A\nHOLE IN THE SHIP\n",
-                                                            "Think about my\nsocks!!! >:(\n"
+                                                            "Think about my\nsocks!!!\n"
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -3526,7 +3526,7 @@
                         "text": [
                             "test"
                         ],
-                        "avatarId": "",
+                        "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c",
                         "__collapse": false
                     }
                 },
@@ -3859,10 +3859,10 @@
                     ]
                 },
                 {
-                    "spriteSheetId": "12cb4204-0644-47cc-89d6-d06dd1a94e9a",
+                    "spriteSheetId": "1c2fa4fd-c088-4837-9110-66de60800cb8",
                     "movementType": "static",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "0",
                     "animSpeed": "3",
                     "id": "c8daf353-1044-4c11-a417-02950703ce09",
                     "x": 24,
@@ -3961,6 +3961,11 @@
             "actors": [],
             "triggers": [],
             "script": [
+                {
+                    "id": "96b454a7-6178-4b2b-aa53-fe01c110d7bf",
+                    "command": "EVENT_RESET_VARIABLES",
+                    "args": {}
+                },
                 {
                     "id": "4cfd37a9-2e0b-460f-ad9c-87af8a008fe4",
                     "command": "EVENT_ACTOR_HIDE",
@@ -5630,10 +5635,10 @@
             "y": 333,
             "actors": [
                 {
-                    "spriteSheetId": "12cb4204-0644-47cc-89d6-d06dd1a94e9a",
+                    "spriteSheetId": "1c2fa4fd-c088-4837-9110-66de60800cb8",
                     "movementType": "static",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "0",
                     "animSpeed": "3",
                     "id": "5eaadd37-f72f-402a-9187-39d84605bea6",
                     "x": 24,
@@ -5746,7 +5751,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "PEARY!!!"
+                            "PEARY!!!\n\n"
                         ],
                         "avatarId": ""
                     }
@@ -5781,7 +5786,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "PEARY!!!"
+                            "PEARY!!!\n\n"
                         ],
                         "avatarId": ""
                     }
@@ -6719,6 +6724,13 @@
                     }
                 },
                 {
+                    "id": "21f27795-64d1-47c3-a6ab-eb57315d3502",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 2
+                    }
+                },
+                {
                     "id": "281e60b0-fd5c-4e70-b965-8fb143f1c5a6",
                     "command": "EVENT_TEXT",
                     "args": {
@@ -6726,13 +6738,6 @@
                             "(That should\nsort it!)"
                         ],
                         "avatarId": ""
-                    }
-                },
-                {
-                    "id": "21f27795-64d1-47c3-a6ab-eb57315d3502",
-                    "command": "EVENT_WAIT",
-                    "args": {
-                        "time": 0.2
                     }
                 },
                 {
@@ -6856,7 +6861,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "The S. S. Citrus\nand it's crew were\nnever seen again"
+                            "The S. S. CITRUS\nand it's crew were\nnever seen again"
                         ],
                         "avatarId": ""
                     }
@@ -7143,6 +7148,14 @@
             "_v": 1580594623656
         },
         {
+            "id": "1c2fa4fd-c088-4837-9110-66de60800cb8",
+            "name": "Box of pear cider",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "Box of pear cider.png",
+            "_v": 1580607833307
+        },
+        {
             "id": "c21c7eed-e53a-4330-81fb-9c39e8d80843",
             "name": "Button",
             "numFrames": 2,
@@ -7247,6 +7260,38 @@
             "_v": 1580595539895
         },
         {
+            "id": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa",
+            "name": "Profile Orange owl",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Profile Orange owl.png",
+            "_v": 1580608144984
+        },
+        {
+            "id": "5495c896-06f8-440c-bdc3-e3e7eb61014c",
+            "name": "Profile captain dressed",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Profile captain dressed.png",
+            "_v": 1580608144971
+        },
+        {
+            "id": "9a92e070-f836-4573-bcd4-fea17d7dc0c8",
+            "name": "Profile captain natural",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Profile captain natural.png",
+            "_v": 1580608144978
+        },
+        {
+            "id": "fae0181b-37ac-4aea-b87d-4c36750574f8",
+            "name": "Profile strawberry sparrow",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Profile strawberry sparrow.png",
+            "_v": 1580608144988
+        },
+        {
             "id": "4c267984-884b-48ff-85ed-65349d66595a",
             "name": "Sexy fedora",
             "numFrames": 6,
@@ -7296,6 +7341,12 @@
         }
     ],
     "music": [
+        {
+            "id": "ee779eb3-e0ec-4d87-b3cf-23be1427ecc9",
+            "name": "PANIC",
+            "filename": "PANIC.mod",
+            "_v": 1580607887122
+        },
         {
             "id": "da1125c3-2c68-4282-bbfc-505a46eeec00",
             "name": "calculator",
