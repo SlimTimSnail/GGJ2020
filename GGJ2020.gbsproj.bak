@@ -3589,6 +3589,14 @@
                     "__type": "event"
                 },
                 {
+                    "id": "34141772-e5a1-4720-9f0d-d23aa27cedee",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "453341b2-5c69-4e6d-9224-216a028b9ed6",
+                        "loop": true
+                    }
+                },
+                {
                     "id": "50987ef4-f76c-4e1c-830d-995419121f7c",
                     "command": "EVENT_WAIT",
                     "args": {
@@ -4137,19 +4145,16 @@
                     "args": {}
                 },
                 {
+                    "id": "2a68fc1d-1e6a-47f8-ab24-b337a04b7bb6",
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {}
+                },
+                {
                     "id": "4cfd37a9-2e0b-460f-ad9c-87af8a008fe4",
                     "command": "EVENT_ACTOR_HIDE",
                     "args": {
                         "actorId": "player",
                         "__collapse": true
-                    }
-                },
-                {
-                    "id": "f0f2a99c-f05b-4f59-8e76-998af065452e",
-                    "command": "EVENT_MUSIC_PLAY",
-                    "args": {
-                        "musicId": "453341b2-5c69-4e6d-9224-216a028b9ed6",
-                        "loop": true
                     }
                 },
                 {

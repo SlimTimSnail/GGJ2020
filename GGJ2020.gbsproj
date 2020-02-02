@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 50,
+        "worldScrollX": 408,
+        "worldScrollY": 432,
+        "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -203,8 +203,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Ah frick...",
-                                                "Radio machine\nbroke :("
+                                                "Ah frick...\n\n",
+                                                "Radio machine\nbroke :(\n"
                                             ],
                                             "avatarId": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa"
                                         }
@@ -255,8 +255,8 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Ah frick...",
-                                                            "Radio machine\nbroke :("
+                                                            "Ah frick...\n\n",
+                                                            "Radio machine\nbroke :(\n"
                                                         ],
                                                         "avatarId": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa"
                                                     }
