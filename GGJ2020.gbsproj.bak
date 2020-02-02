@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 968,
-        "worldScrollY": 759,
+        "worldScrollX": 1116,
+        "worldScrollY": 611,
         "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -6067,7 +6067,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "We're all here\nfor you!"
+                            "We're all here\nfor you!\n"
                         ],
                         "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
                     }
