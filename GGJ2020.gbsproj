@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 537,
-        "worldScrollY": 1021,
+        "worldScrollX": 2231,
+        "worldScrollY": 870,
         "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -3848,9 +3848,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Do it you fuck"
+                                    "Do it you fuck\n\n"
                                 ],
-                                "avatarId": ""
+                                "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                             }
                         },
                         {
@@ -3921,9 +3921,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "test"
+                            "test\n\n"
                         ],
-                        "avatarId": ""
+                        "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                     }
                 },
                 {
@@ -3939,9 +3939,17 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Go Peary! Toss it\ninto the fricken\nsea"
+                            "Go Peary! Toss\nit into the\nfricken sea!"
                         ],
-                        "avatarId": ""
+                        "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
+                    }
+                },
+                {
+                    "id": "46e81d33-74c4-48f0-b881-e24b440df0d0",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "ee779eb3-e0ec-4d87-b3cf-23be1427ecc9",
+                        "loop": true
                     }
                 },
                 {
@@ -5469,12 +5477,17 @@
                     }
                 },
                 {
+                    "id": "24667444-e22c-4b8a-ace9-4242996e9408",
+                    "command": "EVENT_MUSIC_STOP",
+                    "args": {}
+                },
+                {
                     "id": "e5f3dcb6-80b4-4172-9d0b-d414769cc616",
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
                             "(It's no use...)\n\n",
-                            "You can't bring\nyourself to do it)"
+                            "You can't bring\nyourself to do\nit...)"
                         ],
                         "avatarId": ""
                     }
@@ -5754,7 +5767,15 @@
                         "text": [
                             "PEARY!!!\n\n"
                         ],
-                        "avatarId": ""
+                        "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
+                    }
+                },
+                {
+                    "id": "51065c0a-f31c-45cc-8bbe-c3416082f2f0",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "2cc3ffcd-481e-446a-a9a2-404f774f4f7d",
+                        "loop": true
                     }
                 },
                 {
@@ -5789,7 +5810,7 @@
                         "text": [
                             "PEARY!!!\n\n"
                         ],
-                        "avatarId": ""
+                        "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
                     }
                 },
                 {
@@ -7359,6 +7380,12 @@
             "name": "music1",
             "filename": "music1.mod",
             "_v": 1580594623653
+        },
+        {
+            "id": "2cc3ffcd-481e-446a-a9a2-404f774f4f7d",
+            "name": "music2",
+            "filename": "music2.mod",
+            "_v": 1580609130438
         },
         {
             "id": "453341b2-5c69-4e6d-9224-216a028b9ed6",

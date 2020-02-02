@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 804,
-        "worldScrollY": 1008,
+        "worldScrollX": 2134,
+        "worldScrollY": 833,
         "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -1479,8 +1479,8 @@
                 0
             ],
             "id": "4dfa4c65-5801-4c53-b4fa-395a97c8cf7c",
-            "x": 405,
-            "y": 30,
+            "x": 407,
+            "y": 32.5,
             "actors": [
                 {
                     "spriteSheetId": "24412e44-9149-4e6b-813f-397124b6dd71",
@@ -1518,12 +1518,12 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Wow thanks Peary!",
-                                                "I'm putting them\non straight away!",
-                                                "...",
-                                                "Um could you turn\naround please?"
+                                                "Wow thanks\nPeary!\n",
+                                                "I'm putting them\non straight\naway!",
+                                                "...\n\n",
+                                                "Um could you\nturn around\nplease?"
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                         }
                                     },
                                     {
@@ -1539,9 +1539,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "The nerve of some\npeople..."
+                                                "The nerve of\nsome people...\n"
                                             ],
-                                            "avatarId": ""
+                                            "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                         }
                                     },
                                     {
@@ -1611,10 +1611,10 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Look I hate to be\nso demanding\nbut...",
-                                                            "Just kidding I\ndon't actually\nhate it lol haha"
+                                                            "Look I hate to\nbe so demanding\nbut...",
+                                                            "LOL just kidding\nI don't actually\nhate it haha"
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                     }
                                                 },
                                                 {
@@ -1631,9 +1631,9 @@
                                                     "args": {
                                                         "text": [
                                                             "But yeah.\n\n",
-                                                            "You still need to\nfind one more item\nof clothing."
+                                                            "You still need\nto find one more\nitem of clothing"
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                     }
                                                 },
                                                 {
@@ -1670,7 +1670,7 @@
                                                                         "FUCK\n\n",
                                                                         "That's no where\nnear enough\nclothes Peary!"
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                                 }
                                                             },
                                                             {
@@ -1688,7 +1688,7 @@
                                                                     "text": [
                                                                         "Keep looking\nplease.\n"
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                                 }
                                                             },
                                                             {
@@ -1726,7 +1726,7 @@
                                                                                     "Do you have my\nclothes yet?\n",
                                                                                     "No?\n\n"
                                                                                 ],
-                                                                                "avatarId": ""
+                                                                                "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                                             }
                                                                         },
                                                                         {
@@ -1744,7 +1744,7 @@
                                                                                 "text": [
                                                                                     "Then frick off.\n\n"
                                                                                 ],
-                                                                                "avatarId": ""
+                                                                                "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                                             }
                                                                         },
                                                                         {
@@ -1790,13 +1790,14 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Hey Peary,\n\n",
-                                                                                    "I was getting heat\nstroke so I took\nmy clothes off.",
+                                                                                    "Hey Peary!\n\n",
+                                                                                    "I was getting\nheat stroke\nso...",
+                                                                                    "I took all my\nclothes off.\n",
                                                                                     "But now I'm\ncold...\n",
-                                                                                    "Could you help me\nrepair my dignity,\n",
-                                                                                    "and go find them\nfor me?\n"
+                                                                                    "Could you help\nme repair my\ndignity and",
+                                                                                    "go find them\nfor me?\n"
                                                                                 ],
-                                                                                "avatarId": ""
+                                                                                "avatarId": "9a92e070-f836-4573-bcd4-fea17d7dc0c8"
                                                                             }
                                                                         },
                                                                         {
@@ -1965,9 +1966,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "God I fricken love\nclothes dude."
+                                    "God I fricken\nlove clothes\ndude."
                                 ],
-                                "avatarId": ""
+                                "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                             }
                         },
                         {
@@ -2482,12 +2483,12 @@
                                                 "Wow!!!\n\n",
                                                 "Ahh!!!\n\n",
                                                 "Yikes!!!\n\n",
-                                                "Did you see\nthere's a hole in\nthe hull???",
-                                                "I wonder who would\nbe so foolish to\naccidentally uh",
-                                                "Put a huge hole in\nthe hull like\nthat???",
-                                                "Not me that's for\nsure ahahahaha\n"
+                                                "Did you see\nthere's a hole\nin the hull???",
+                                                "I wonder who\nwould be so\nfoolish to uh",
+                                                "Put a huge hole\nin the hull like\nthat???",
+                                                "Not me that's\nfor sure\nahahahaha"
                                             ],
-                                            "avatarId": "",
+                                            "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8",
                                             "__collapse": false
                                         }
                                     },
@@ -2505,15 +2506,15 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Can you repair it\nPeary???\n",
-                                                "Water is already\nleaking in and I\ndon't want my",
-                                                "socks to get\nwet!!!\n",
+                                                "Can you repair\nit Peary???\n",
+                                                "Water is already\nleaking in and I\nuh...",
+                                                "Don't want\nmy socks\ntoget wet!!!",
                                                 "Eww wet socks,\nnobody likes wet\nsocks.",
                                                 "Do you like wet\nsocks Peary?\n",
-                                                "I wouldn't be your\nfriend if you\ndid.",
-                                                "Prove to me you\nhate wet socks by\nfixing the hole!"
+                                                "I wouldn't be\nyour friend if\nyou did.",
+                                                "Prove to me you\nhate wet socks\nby fixing it."
                                             ],
-                                            "avatarId": "",
+                                            "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8",
                                             "__collapse": false
                                         },
                                         "__type": "event"
@@ -2569,7 +2570,7 @@
                                                             "THERE'S STILL A\nHOLE IN THE SHIP\n",
                                                             "Think about my\nsocks!!!\n"
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
                                                     }
                                                 },
                                                 {
@@ -2599,7 +2600,7 @@
                                                                         "...\n\n",
                                                                         "Thanks for\nfixing the hole\nPeary."
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
                                                                 }
                                                             },
                                                             {
@@ -2624,9 +2625,9 @@
                                                                         "...\n\n",
                                                                         "...\n\n",
                                                                         "...\n\n",
-                                                                        "Please don't tell\nTHE CAPTAIN about\nthis Peary..."
+                                                                        "Please don't\ntell THE CAPTAIN\nabout this..."
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "fae0181b-37ac-4aea-b87d-4c36750574f8"
                                                                 }
                                                             },
                                                             {
@@ -3847,9 +3848,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Do it you fuck"
+                                    "Do it you fuck\n\n"
                                 ],
-                                "avatarId": ""
+                                "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                             }
                         },
                         {
@@ -3920,9 +3921,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "test"
+                            "test\n\n"
                         ],
-                        "avatarId": ""
+                        "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                     }
                 },
                 {
@@ -3938,9 +3939,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "Go Peary! Toss it\ninto the fricken\nsea"
+                            "Go Peary! Toss\nit into the\nfricken sea!"
                         ],
-                        "avatarId": ""
+                        "avatarId": "5495c896-06f8-440c-bdc3-e3e7eb61014c"
                     }
                 },
                 {
@@ -7358,6 +7359,12 @@
             "name": "music1",
             "filename": "music1.mod",
             "_v": 1580594623653
+        },
+        {
+            "id": "2cc3ffcd-481e-446a-a9a2-404f774f4f7d",
+            "name": "music2",
+            "filename": "music2.mod",
+            "_v": 1580609130438
         },
         {
             "id": "453341b2-5c69-4e6d-9224-216a028b9ed6",
