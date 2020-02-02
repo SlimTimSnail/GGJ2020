@@ -2,8 +2,8 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1116,
-        "worldScrollY": 611,
+        "worldScrollX": 1197,
+        "worldScrollY": 0,
         "zoom": 100,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
@@ -7006,7 +7006,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "The S. S. CITRUS\nand it's crew were\nnever seen again"
+                            "The S. S. CITRUS\nand its crew were\nnever seen again"
                         ],
                         "avatarId": ""
                     }
