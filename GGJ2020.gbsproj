@@ -2516,7 +2516,7 @@
                                             "text": [
                                                 "Can you repair\nit Peary???\n",
                                                 "Water is already\nleaking in and I\nuh...",
-                                                "Don't want\nmy socks\ntoget wet!!!",
+                                                "Don't want\nmy socks\nto get wet!!!",
                                                 "Eww wet socks,\nnobody likes wet\nsocks.",
                                                 "Do you like wet\nsocks Peary?\n",
                                                 "I wouldn't be\nyour friend if\nyou did.",
@@ -7651,7 +7651,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Broken deck.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "6ed9e35f-5aeb-40a4-b6bb-0a6133005dae",
@@ -7661,7 +7661,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Broken deck fix 1.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "eabed8c7-b973-4aeb-a1c0-76f2c7e0bc23",
@@ -7671,7 +7671,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Broken deck fix 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "57e6d245-9e70-47b6-8763-337917b29d50",
@@ -7681,7 +7681,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Broken deck fixed.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "242be6b6-a5b3-4f73-861c-dce0838fde18",
@@ -7691,7 +7691,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "f6285e4a-66eb-4da6-ba22-10794e11c879",
@@ -7701,7 +7701,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "3605a0bf-6c37-4863-9773-521647404ab3",
@@ -7711,7 +7711,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Hull 3.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -7721,7 +7721,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "50e656ab-0f86-4a0e-bc0c-26e2ea836148",
@@ -7731,7 +7731,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Radio mingame.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "960b3ffa-28b7-4108-b45f-e0376ee7dffe",
@@ -7741,7 +7741,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Radio mingame_ broken.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "0dd13851-ba0a-4a84-bae9-f647a4dfc1dc",
@@ -7751,7 +7751,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Radio mingame_ fix 1.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "067368b3-1b14-4678-8b7f-53e35a11a338",
@@ -7761,7 +7761,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Radio mingame_ fix 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "c78b871b-c3d5-4bc4-ad0c-d657955566b6",
@@ -7771,7 +7771,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Radio mingame_ fixed.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "5acd1a4e-dc40-4206-88fa-fe3a8a3ae643",
@@ -7781,7 +7781,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Radio room.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "a5910d85-f09c-4017-ae01-a900f6052b78",
@@ -7791,7 +7791,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Radio room 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "b107354e-b1cf-478b-8bc8-ac00663800ce",
@@ -7801,7 +7801,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Ship.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "06168db2-2d77-4fdb-894a-aefccc571ff5",
@@ -7811,7 +7811,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Ship 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "fb7f779f-6cae-4aad-92dd-bf14d3528acd",
@@ -7821,7 +7821,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Ship 3.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "01681509-6409-4ce4-aca4-ee6547f48fe9",
@@ -7831,7 +7831,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Steering zone.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "9b6b45ac-7664-40df-a6bd-4c70b1750c87",
@@ -7841,7 +7841,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Steering zone 2.png",
-            "_v": 1580628079913
+            "_v": 1580638698002
         },
         {
             "id": "d21787f0-6405-45e6-ba42-af6fff27e9be",
@@ -7851,7 +7851,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "The end.png",
-            "_v": 1580628079914
+            "_v": 1580638698002
         },
         {
             "id": "5ee9489b-8bb8-4ff0-9009-7f1db3ce3b72",
@@ -7861,7 +7861,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Will power.png",
-            "_v": 1580628079914
+            "_v": 1580638698002
         },
         {
             "id": "319fd4ae-dab5-4342-a289-2e52c6b3fe5e",
@@ -7871,7 +7871,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Will power 2.png",
-            "_v": 1580628079914
+            "_v": 1580638698002
         },
         {
             "id": "233a3167-73ad-4161-8ee1-12551b1bb4cc",
@@ -7881,7 +7881,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Will power 3.png",
-            "_v": 1580628079914
+            "_v": 1580638698002
         }
     ],
     "spriteSheets": [
@@ -7891,7 +7891,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -7899,7 +7899,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "12cb4204-0644-47cc-89d6-d06dd1a94e9a",
@@ -7907,7 +7907,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "B Button.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "421f9ec5-b290-450f-bd32-f76c3c16d18f",
@@ -7915,7 +7915,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Blank.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "1c2fa4fd-c088-4837-9110-66de60800cb8",
@@ -7923,7 +7923,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Box of pear cider.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "c21c7eed-e53a-4330-81fb-9c39e8d80843",
@@ -7931,7 +7931,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "Button.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "97d3ffbb-33c9-4d29-b113-d87ad064974f",
@@ -7939,7 +7939,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Captain_clothed.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "24412e44-9149-4e6b-813f-397124b6dd71",
@@ -7947,7 +7947,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Captain_natural.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "917e1462-b0bd-4196-a479-99224b6b4d16",
@@ -7955,7 +7955,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "D-Pad Button.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "f1998dff-9ad2-45b3-9ea7-7c821cbd31f6",
@@ -7963,7 +7963,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Dapper boots.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "5d137376-f283-421e-a38c-d8b8011fa80d",
@@ -7971,7 +7971,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Fucking cool coat.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "3cc8858d-39a5-49d4-b747-15d834302451",
@@ -7979,7 +7979,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Leaking water.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "0b40a0c8-a6f3-496d-96bf-28ca98f8fe7c",
@@ -7987,7 +7987,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Leaking water fixed.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "2878ebbe-a0be-4a12-8790-fd4d13fae4cd",
@@ -7995,7 +7995,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Orange owl.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "92dc339f-ff30-4b50-9fd7-ac8d43df969a",
@@ -8003,7 +8003,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Orange owl_BigSAD.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "61904a4f-8040-4f18-a2a5-f0a86e9758a2",
@@ -8011,7 +8011,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Orange owl_happy.png",
-            "_v": 1580628079915
+            "_v": 1580638698002
         },
         {
             "id": "47cf173e-95c9-47b4-a45d-028f11c120bb",
@@ -8019,7 +8019,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Peary awake.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "6958fb86-2afc-4b40-90a2-9485641d8bbb",
@@ -8027,7 +8027,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Peary snooze.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "5495c896-06f8-440c-bdc3-e3e7eb61014c",
@@ -8035,7 +8035,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Profile captain dressed.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "9a92e070-f836-4573-bcd4-fea17d7dc0c8",
@@ -8043,7 +8043,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Profile captain natural.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "3e11111f-99e1-4e90-bd55-fee52ad8c1fa",
@@ -8051,7 +8051,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Profile Orange owl.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "fae0181b-37ac-4aea-b87d-4c36750574f8",
@@ -8059,7 +8059,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Profile strawberry sparrow.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "2f478e4f-402b-4690-9159-4ecc831a7249",
@@ -8067,7 +8067,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "RIP Cranberry crow.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "4c267984-884b-48ff-85ed-65349d66595a",
@@ -8075,7 +8075,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Sexy fedora.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -8083,7 +8083,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "054ac35a-b154-4cc2-8a91-bdae2cc0d05b",
@@ -8091,7 +8091,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Strawberry sparrow.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         },
         {
             "id": "e8ed217a-b2f3-4edc-85c7-087f83e79d93",
@@ -8099,7 +8099,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "The boi.png",
-            "_v": 1580628079915
+            "_v": 1580638698003
         }
     ],
     "music": [
@@ -8107,37 +8107,37 @@
             "id": "da1125c3-2c68-4282-bbfc-505a46eeec00",
             "name": "calculator",
             "filename": "calculator.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         },
         {
             "id": "c7f6ce06-f65b-4adf-8b00-a485799d4770",
             "name": "music1",
             "filename": "music1.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         },
         {
             "id": "2cc3ffcd-481e-446a-a9a2-404f774f4f7d",
             "name": "music2",
             "filename": "music2.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         },
         {
             "id": "ee779eb3-e0ec-4d87-b3cf-23be1427ecc9",
             "name": "PANIC",
             "filename": "PANIC.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         },
         {
             "id": "453341b2-5c69-4e6d-9224-216a028b9ed6",
             "name": "sea-crashing",
             "filename": "sea-crashing.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1580628079889
+            "_v": 1580638697980
         }
     ],
     "customEvents": [
